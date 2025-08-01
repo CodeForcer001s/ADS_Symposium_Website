@@ -13,7 +13,6 @@ Built just for the vibes — no topics, no constraints, just possibilities.
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/your-username/symposium-site.git
-cd symposium-site
+git clone https://github.com/CodeForcer001s/ADS_Symposium_Website.git
 npm install
 npm run dev
