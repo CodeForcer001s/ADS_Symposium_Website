@@ -1,5 +1,3 @@
-// src/components/EventCard3D.jsx
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CardContainer, CardBody, CardItem } from './EventCard3D'; 
@@ -8,7 +6,7 @@ const EventCard3D = ({ id, icon: Icon, title, description }) => {
     return (
         <Link to={`/event/${id}`}>
             <CardContainer className="inter-var">
-                <CardBody className="relative group/card h-auto w-auto sm:w-[30rem] rounded-xl p-6 border border-white/[0.2] bg-slate-200">
+                <CardBody className="relative group/card h-auto w-auto sm:w-[30rem] rounded-xl p-9 border border-white/[0.2] bg-slate-200">
                     <CardItem
                         translateZ="50"
                         className="text-xl font-bold text-copy"

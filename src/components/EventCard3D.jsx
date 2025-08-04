@@ -1,5 +1,3 @@
-// src/components/ui/ThreeDCard.jsx
-
 import React, {
     createContext,
     useState,
