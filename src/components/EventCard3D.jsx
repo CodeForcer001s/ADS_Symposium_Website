@@ -1,4 +1,4 @@
-// ThreeDCard.jsx
+// src/components/ui/ThreeDCard.jsx
 
 import React, {
     createContext,
@@ -40,9 +40,9 @@ export const CardContainer = ({
         if (!containerRef.current) return;
         const { left, top, width, height } =
             containerRef.current.getBoundingClientRect();
-        const x = (e.clientX - left - width / 5) / -6;
-        const y = (e.clientY - top - height / 2) / 4;
-        containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+        const x = (e.clientX - left - width / 2) / 25;
+        const y = (e.clientY - top - height / 2) / 25;
+        containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${-y}deg)`;
     };
 
     const handleMouseEnter = () => {
@@ -58,10 +58,7 @@ export const CardContainer = ({
     return (
         <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
             <div
-                className={cn(
-                    "py-20 flex items-center justify-center",
-                    containerClassName
-                )}
+                className={cn("flex items-center justify-center", containerClassName)}
                 style={{ perspective: "1000px" }}
             >
                 <div
