@@ -1,0 +1,129 @@
+/* Space-themed animations and effects */
+.cosmic-text {
+  text-shadow: 0 0 5px #06b6d4, 0 0 10px #06b6d4;
+  letter-spacing: 1px;
+}
+
+.nebula-card {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(107, 70, 193, 0.3);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+}
+
+.planet-orbit {
+  position: relative;
+}
+
+.planet-orbit::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 1px dashed rgba(107, 70, 193, 0.5);
+  border-radius: 50%;
+  animation: rotate 20s linear infinite;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  animation: twinkle 4s ease-in-out infinite;
+}
+
+.star.small {
+  width: 1px;
+  height: 1px;
+}
+
+.star.medium {
+  width: 2px;
+  height: 2px;
+}
+
+.star.large {
+  width: 3px;
+  height: 3px;
+}
+
+.neon-border {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #6b46c1, #06b6d4);
+  border-image-slice: 1;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+}
+
+.space-button {
+  background: linear-gradient(45deg, #6b46c1, #06b6d4);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.space-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: all 0.5s ease;
+}
+
+.space-button:hover::before {
+  left: 100%;
+}
+
+.space-button:hover {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.7);
+  transform: translateY(-2px);
+}
+
+.holographic {
+  background: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(107, 70, 193, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+  transition: all 0.3s ease;
+}
+
+.holographic:hover {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.cosmic-dust {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+.floating-fast {
+  animation: float 4s ease-in-out infinite;
+}
+
+.glowing-text {
+  color: #e5e7eb;
+  text-shadow: 0 0 5px #06b6d4, 0 0 10px #06b6d4;
+  animation: glow 2s ease-in-out infinite;
+}
