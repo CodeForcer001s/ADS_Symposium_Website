@@ -17,7 +17,7 @@ const guidelines = [
 
 const GuidelinesSection = () => {
     return (
-        <section id="guidelines" className="w-full border-b border-white/10 bg-surface px-4 py-24">
+        <section id="guidelines" className="w-full border-b border-white/10 bg-surface bg-black text-white px-4 py-24">
             <div className="mx-auto max-w-5xl">
 
                 <div className="text-center mb-16">

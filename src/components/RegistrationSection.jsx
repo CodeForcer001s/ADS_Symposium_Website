@@ -4,7 +4,7 @@ const RegistrationSection = () => {
     return (
         <section
             id="register"
-            className="flex min-h-screen flex-col items-center justify-center border-b border-white/10 px-4 py-24 bg-surface"
+            className="flex min-h-screen flex-col items-center justify-center border-b border-white/10 px-4 py-24 bg-surface bg-black text-white"
         >
             <div className="relative z-10 flex flex-col items-center text-center">
                 <h2 className="font-serif text-5xl mb-4">Register Now</h2>

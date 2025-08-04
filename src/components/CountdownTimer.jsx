@@ -1,13 +1,18 @@
+// src/components/CountdownTimer.jsx
+
 import React, { useState, useEffect } from 'react';
 
 // A reusable component for each time segment (Days, Hours, etc.)
 const TimeSegment = ({ value, label }) => (
     <div className="flex flex-col items-center">
-        {/* --- MODIFIED FONT and SIZE for the number --- */}
-        <span className="font-sans text-4xl md:text-6xl font-semibold text-copy">
+        {/* --- MODIFIED: Added vibrant color and a glow effect for the number --- */}
+        <span
+            className="font-sans text-4xl md:text-6xl font-semibold text-cyan-400"
+            style={{ textShadow: '0 0 8px rgba(0, 245, 255, 0.5)' }} // Neon glow effect
+        >
             {String(value).padStart(2, '0')}
         </span>
-        <span className="mt-1 text-xs font-sans tracking-widest uppercase text-copy-light">
+        <span className="mt-1 text-xs font-sans tracking-widest uppercase text-white/60">
             {label}
         </span>
     </div>
@@ -50,19 +55,22 @@ const CountdownTimer = ({ targetDate }) => {
     if (isTimerFinished) {
         return (
             <div className="text-center">
-                <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary">The Event is Live!</h2>
+                <h2 className="font-serif text-4xl md:text-5xl font-bold text-green-400" style={{ textShadow: '0 0 10px rgba(52, 211, 153, 0.6)' }}>
+                    The Event is Live!
+                </h2>
             </div>
         );
     }
 
     return (
-        <div className="flex items-center justify-center p-8 gap-3 md:gap-6">
+        <div className="flex items-center justify-center p-4 md:p-8 gap-3 md:gap-6">
             <TimeSegment value={timeLeft.days} label="Days" />
-            <span className="font-sans text-4xl md:text-5xl text-copy-light pb-6">:</span>
+            {/* --- MODIFIED: Brighter color for the colon --- */}
+            <span className="font-sans text-4xl md:text-5xl text-cyan-400/70 pb-6">:</span>
             <TimeSegment value={timeLeft.hours} label="Hours" />
-            <span className="font-sans text-4xl md:text-5xl text-copy-light pb-6">:</span>
+            <span className="font-sans text-4xl md:text-5xl text-cyan-400/70 pb-6">:</span>
             <TimeSegment value={timeLeft.minutes} label="Minutes" />
-            <span className="font-sans text-4xl md:text-5xl text-copy-light pb-6">:</span>
+            <span className="font-sans text-4xl md:text-5xl text-cyan-400/70 pb-6">:</span>
             <TimeSegment value={timeLeft.seconds} label="Seconds" />
         </div>
     );
