@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,10 +31,17 @@
 @layer base {
   * {
     @apply border-border;
+    
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+      /* or any custom value */
   }
   body {
     @apply bg-space-black text-stellar-silver;
     font-feature-settings: "rlig" 1, "calt" 1;
+
   }
 }
 

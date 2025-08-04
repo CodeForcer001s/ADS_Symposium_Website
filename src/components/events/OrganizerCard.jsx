@@ -1,15 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Card, CardContent } from '../ui/card';
-import { Avatar, AvatarImage, AvatarFallback } from '../ui/avatar';
-import { floatAnimation } from '../../utils/animations';
+import React from "react";
+import { motion } from "framer-motion";
+import { Card, CardContent } from "../ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "../ui/avatar";
+import { floatAnimation } from "../../utils/animations";
 
 const OrganizerCard = ({ organizer, delay = 0 }) => {
   const initials = organizer.name
-    .split(' ')
-    .map(name => name[0])
-    .join('');
-  
+    .split(" ")
+    .map((name) => name[0])
+    .join("");
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -27,11 +27,15 @@ const OrganizerCard = ({ organizer, delay = 0 }) => {
               {initials}
             </AvatarFallback>
           </Avatar>
-          
-          <h3 className="text-xl font-bold mb-1 cosmic-text">{organizer.name}</h3>
+
+          <h3 className="text-xl font-bold mb-1 cosmic-text">
+            {organizer.name}
+          </h3>
           <p className="text-nebula-cyan mb-2">{organizer.role}</p>
-          <p className="text-stellar-silver/70 text-sm mb-4">{organizer.department}</p>
-          
+          <p className="text-stellar-silver/70 text-sm mb-4">
+            {organizer.department}
+          </p>
+
           <div className="mt-auto pt-4 border-t border-cosmic-purple/20 w-full">
             <p className="text-stellar-silver/80 text-sm">
               <span className="text-stellar-silver/60">Contact: </span>
