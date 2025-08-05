@@ -457,7 +457,7 @@ const FuturisticEventHero = ({ event }) => {
               style={{ animation: "fadeInUp 1s ease-out 0.8s both" }}
             >
               <a
-                href="https://docs.google.com/forms/d/1URbyQNnrZZnfrGXEsy1P8N7vzLwsyE2J-uDHbxK5beM/edit"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSezC-3X4aeZED34Cn-mUCjc3D8ASbncAVtIHyUbPYO9ILY68g/viewform?usp=header"
                 className="group px-10 py-4 cyber-button rounded-lg text-white font-bold text-lg transform hover:scale-105 transition-all duration-300 relative z-10"
               >
                 <span className="flex items-center gap-3 relative z-10">

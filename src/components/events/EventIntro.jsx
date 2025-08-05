@@ -179,7 +179,10 @@ const EventIntro = ({
   };
 
   return (
-    <div className="relative min-h-screen bg-black overflow-hidden" id="event-intro"> 
+    <div
+      className="relative min-h-screen bg-black overflow-hidden"
+      id="event-intro"
+    >
       {/* Floating Marvel Symbols */}
       <div className="absolute inset-0 opacity-10">
         {[...Array(20)].map((_, i) => (
@@ -461,7 +464,7 @@ const EventIntro = ({
 
                     <div className="flex items-center gap-6">
                       <a
-                        href="https://docs.google.com/forms/d/1URbyQNnrZZnfrGXEsy1P8N7vzLwsyE2J-uDHbxK5beM/edit"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSezC-3X4aeZED34Cn-mUCjc3D8ASbncAVtIHyUbPYO9ILY68g/viewform?usp=header"
                         className="flex items-center gap-4 px-10 py-5 font-black text-xl text-white rounded-xl border-2 border-white transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-white/50 group"
                         style={{
                           background:

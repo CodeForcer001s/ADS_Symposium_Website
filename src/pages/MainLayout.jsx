@@ -2,13 +2,13 @@
 import React from "react";
 
 import FuturisticEventHero from "../components/FuturisticHero/FuturisticEventHero";
-import CountdownTimer from "../components/CountdownTimer";
+
 import EventTimeline from "../components/EventTimeLine";
 import EventsSection from "../components/EventsSection";
 import GuidelinesSection from "../components/GuidelinesSection";
 import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
-import RegistrationSection from "../components/RegistrationSection";
+
 import FloatingDock from "../components/FloatingDock";
 
 const MainLayout = () => {
@@ -25,7 +25,6 @@ const MainLayout = () => {
         <section id="home">
           <FuturisticEventHero event={eventDetails} />
           {/* Optional Countdown */}
-          <CountdownTimer targetDate={eventDate} /> 
         </section>
 
         {/* ABOUT */}
@@ -41,9 +40,6 @@ const MainLayout = () => {
         >
           <EventsSection />
         </section>
-
-        {/* REGISTRATION */}
-        <RegistrationSection />
       </main>
 
       {/* GUIDELINES */}
