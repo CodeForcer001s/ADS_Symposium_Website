@@ -42,7 +42,7 @@ const FloatingDock = () => {
             <DockItem href="#events" tooltip="Events">
                 <IconMovie size={28} />
             </DockItem>
-            <DockItem href="#register" tooltip="Register">
+            <DockItem href="#home" tooltip="Register">
                 <IconTicket size={28} />
             </DockItem>
         </div>

@@ -31,7 +31,9 @@ const MainLayout = () => {
         <AboutSection />
 
         {/* TIMELINE */}
+        <div id = "timeline">
         <EventTimeline />
+        </div>
 
         {/* EVENTS */}
         <section
