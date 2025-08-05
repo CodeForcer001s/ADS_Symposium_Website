@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.jsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import MainLayout from "./pages/MainLayout";
+// Import the correct page components instead of EventDetail
+import DataFlix from "./pages/DataFlix";
+import HackOrHaunt from "./pages/HackOrHaunt";
+import Codesync from "./pages/Codesync";
+import PromptEFlux from "./pages/PromptEFlux";
+import Techverse from "./pages/Techverse";
+
+import "./styles/globals.css";
+import "./styles/space-theme.css";
+import "./styles/components.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="app bg-space-black min-h-screen text-stellar-silver">
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainLayout />} />
+          <Route path="/events" element={<MainLayout />} />
+          <Route path="/events/dataflix" element={<DataFlix />} />
+          <Route path="/events/hack-or-haunt" element={<HackOrHaunt />} />
+          <Route path="/events/codesync" element={<Codesync />} />
+          <Route path="/events/prompt-e-flux" element={<PromptEFlux />} />
+          <Route path="/events/techverse" element={<Techverse />} />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
