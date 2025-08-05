@@ -16,7 +16,7 @@ import "./styles/components.css";
 
 function App() {
   return (
-    <div className="app bg-space-black min-h-screen text-stellar-silver">
+    <div className="app bg-black min-h-screen text-stellar-silver">
       <Router>
         <Routes>
           <Route path="/" element={<MainLayout />} />

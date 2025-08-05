@@ -41,25 +41,6 @@ const EventsSection = () => {
   const [viewMode, setViewMode] = useState("grid");
 
   // Get unique categories from eventsData if available
-  const categories =
-    eventsData && eventsData.length > 0
-      ? [
-          "all",
-          ...new Set(
-            eventsData.map(
-              (event) => event.category?.toLowerCase() || "general"
-            )
-          ),
-        ]
-      : ["all"];
-
-  const getCategoryCount = (category) => {
-    if (!eventsData || eventsData.length === 0) return 0;
-    if (category === "all") return eventsData.length;
-    return eventsData.filter(
-      (event) => (event.category?.toLowerCase() || "general") === category
-    ).length;
-  };
 
   // Filter events based on selected category
   const filteredEvents =
@@ -70,9 +51,6 @@ const EventsSection = () => {
         );
 
   // Get featured events count
-  const featuredCount = eventsData
-    ? eventsData.filter((event) => event.featured).length
-    : 0;
 
   return (
     <section className="relative w-full min-h-screen bg-black px-4 py-32 overflow-hidden">
@@ -123,50 +101,10 @@ const EventsSection = () => {
             Explore the five pillars of our symposium and discover amazing
             opportunities for learning, networking, and innovation.
           </p>
-
-          {/* Event statistics */}
-          <div className="flex justify-center gap-8 mb-12">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-1">
-                {eventsData?.length || 0}
-              </div>
-              <div className="text-gray-400 text-sm">Total Events</div>
-            </div>
-            <div className="w-px bg-gray-700" />
-            <div className="text-center">
-              <div className="text-3xl font-bold text-yellow-400 mb-1">
-                {featuredCount}
-              </div>
-              <div className="text-gray-400 text-sm">Featured</div>
-            </div>
-            <div className="w-px bg-gray-700" />
-            <div className="text-center">
-              <div className="text-3xl font-bold text-green-400 mb-1">
-                {categories.length - 1}
-              </div>
-              <div className="text-gray-400 text-sm">Categories</div>
-            </div>
-          </div>
         </div>
 
         {/* Filter and view controls */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 mb-12">
-          {/* Category filters */}
-          <div className="flex items-center gap-2">
-            <IconFilter size={20} className="text-gray-400 mr-2" />
-            <div className="flex flex-wrap gap-3">
-              {categories.map((category) => (
-                <FilterButton
-                  key={category}
-                  label={category.charAt(0).toUpperCase() + category.slice(1)}
-                  isActive={filter === category}
-                  onClick={() => setFilter(category)}
-                  count={getCategoryCount(category)}
-                />
-              ))}
-            </div>
-          </div>
-
           {/* View mode toggle */}
           <div className="flex items-center gap-3 p-1 rounded-xl bg-gray-900/50 border border-gray-700/50">
             <button
