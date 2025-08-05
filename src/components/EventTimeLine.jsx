@@ -1,98 +1,72 @@
 import React from 'react';
-import {
-    IconAward, IconCode, IconDoorEnter, IconGhost, IconChartBar, IconWorld,
-    IconMessageChatbot, IconToolsKitchen2, IconCoffee, IconLogout
-} from '@tabler/icons-react';
+import { Award, Code, DoorOpen, Ghost, BarChart3, Globe, MessageSquare, UtensilsCrossed, Coffee, LogOut } from 'lucide-react';
 
-// Data for the compact timeline. Grid positions are final.
 const eventsData = [
-    // --- General Events on the Main Track (Row 2) ---
-    { id: 'inaug', title: 'Inauguration', icon: IconDoorEnter, grid: 'col-start-1 col-span-2', row: 2, color: 'bg-yellow-800/80' },
-    { id: 'tea', title: 'Tea Break', icon: IconCoffee, grid: 'col-start-3 col-span-1', row: 2, color: 'bg-stone-600/80' },
-    { id: 'break1', title: 'Break', icon: null, grid: 'col-start-6 col-span-1', row: 2, color: 'bg-gray-800/50' },
-    { id: 'lunch', title: 'Lunch', icon: IconToolsKitchen2, grid: 'col-start-9 col-span-2', row: 2, color: 'bg-amber-400/80 text-black' },
-    { id: 'leave', title: 'Leave Campus', icon: IconLogout, grid: 'col-start-15 col-span-1', row: 2, color: 'bg-gray-700/80' },
-
-    // --- Competition Tracks (Rows 3-7) ---
-    // Round 1
-    { id: 'cs1', title: 'CodeSync R1', icon: IconCode, grid: 'col-start-4 col-span-2', row: 3, color: 'bg-blue-900/80' },
-    { id: 'hoh1', title: 'Hack or Haunt R1', icon: IconGhost, grid: 'col-start-4 col-span-2', row: 4, color: 'bg-purple-900/80' },
-    { id: 'df1', title: 'Data Flix R1', icon: IconChartBar, grid: 'col-start-4 col-span-2', row: 5, color: 'bg-green-900/80' },
-    { id: 'tv1', title: 'Techverse R1', icon: IconWorld, grid: 'col-start-4 col-span-2', row: 6, color: 'bg-cyan-900/80' },
-    { id: 'pef1', title: 'Prompt R1', icon: IconMessageChatbot, grid: 'col-start-4 col-span-2', row: 7, color: 'bg-pink-900/80' },
-
-    // Round 2
-    { id: 'cs2', title: 'R2', icon: IconCode, grid: 'col-start-7 col-span-2', row: 3, color: 'bg-blue-800/80' },
-    { id: 'hoh2', title: 'R2', icon: IconGhost, grid: 'col-start-7 col-span-2', row: 4, color: 'bg-purple-800/80' },
-    { id: 'df2', title: 'R2', icon: IconChartBar, grid: 'col-start-7 col-span-2', row: 5, color: 'bg-green-800/80' },
-    { id: 'tv2', title: 'R2', icon: IconWorld, grid: 'col-start-7 col-span-2', row: 6, color: 'bg-cyan-800/80' },
-    { id: 'pef2', title: 'R2', icon: IconMessageChatbot, grid: 'col-start-7 col-span-2', row: 7, color: 'bg-pink-800/80' },
-
-    // Final Round
-    { id: 'cs3', title: 'Final', icon: IconCode, grid: 'col-start-11 col-span-2', row: 3, color: 'bg-blue-700/80' },
-    { id: 'hoh3', title: 'Final', icon: IconGhost, grid: 'col-start-11 col-span-2', row: 4, color: 'bg-purple-700/80' },
-    { id: 'df3', title: 'Final', icon: IconChartBar, grid: 'col-start-11 col-span-2', row: 5, color: 'bg-green-700/80' },
-    { id: 'tv3', title: 'Final', icon: IconWorld, grid: 'col-start-11 col-span-2', row: 6, color: 'bg-cyan-700/80' },
-    { id: 'pef3', title: 'Final', icon: IconMessageChatbot, grid: 'col-start-11 col-span-2', row: 7, color: 'bg-pink-700/80' },
+  { id: 'inaug', title: 'Inauguration', icon: DoorOpen, grid: 'col-start-1 col-span-2', row: 2, color: 'bg-yellow-800' },
+  { id: 'tea', title: 'Tea Break', icon: Coffee, grid: 'col-start-3 col-span-1', row: 2, color: 'bg-stone-600' },
+  { id: 'break1', title: 'Break', icon: null, grid: 'col-start-6 col-span-1', row: 2, color: 'bg-gray-800' },
+  { id: 'lunch', title: 'Lunch', icon: UtensilsCrossed, grid: 'col-start-9 col-span-2', row: 2, color: 'bg-amber-400' },
+  { id: 'leave', title: 'Leave Campus', icon: LogOut, grid: 'col-start-15 col-span-1', row: 2, color: 'bg-gray-700' },
+  { id: 'pef1', title: 'Prompt R1', icon: MessageSquare, grid: 'col-start-4 col-span-2', row: 3, color: 'bg-pink-900' },
+  { id: 'cs1', title: 'CodeSync R1', icon: Code, grid: 'col-start-4 col-span-2', row: 4, color: 'bg-blue-900' },
+  { id: 'hoh1', title: 'Hack or Haunt R1', icon: Ghost, grid: 'col-start-4 col-span-2', row: 5, color: 'bg-purple-900' },
+  { id: 'df1', title: 'Data Flix R1', icon: BarChart3, grid: 'col-start-4 col-span-2', row: 6, color: 'bg-green-900' },
+  { id: 'tv1', title: 'Techverse R1', icon: Globe, grid: 'col-start-4 col-span-2', row: 7, color: 'bg-cyan-900' },
+  { id: 'pef2', title: 'R2', icon: MessageSquare, grid: 'col-start-7 col-span-2', row: 3, color: 'bg-pink-800' },
+  { id: 'cs2', title: 'R2', icon: Code, grid: 'col-start-7 col-span-2', row: 4, color: 'bg-blue-800' },
+  { id: 'hoh2', title: 'R2', icon: Ghost, grid: 'col-start-7 col-span-2', row: 5, color: 'bg-purple-800' },
+  { id: 'df2', title: 'R2', icon: BarChart3, grid: 'col-start-7 col-span-2', row: 6, color: 'bg-green-800' },
+  { id: 'tv2', title: 'R2', icon: Globe, grid: 'col-start-7 col-span-2', row: 7, color: 'bg-cyan-800' },
+  { id: 'pef3', title: 'Final', icon: MessageSquare, grid: 'col-start-11 col-span-2', row: 3, color: 'bg-pink-700' },
+  { id: 'cs3', title: 'Final', icon: Code, grid: 'col-start-11 col-span-2', row: 4, color: 'bg-blue-700' },
+  { id: 'hoh3', title: 'Final', icon: Ghost, grid: 'col-start-11 col-span-2', row: 5, color: 'bg-purple-700' },
+  { id: 'df3', title: 'Final', icon: BarChart3, grid: 'col-start-11 col-span-2', row: 6, color: 'bg-green-700' },
+  { id: 'tv3', title: 'Final', icon: Globe, grid: 'col-start-11 col-span-2', row: 7, color: 'bg-cyan-700' },
 ];
 
 const EventBlock = ({ event }) => {
-    const { title, icon: Icon, grid, row, color } = event;
-    const rowClass = `row-start-${row}`;
-
-    return (
-        <div className={`flex flex-col justify-center items-center text-center p-2 m-px rounded-md border border-white/10 text-xs text-white ${grid} ${rowClass} ${color}`}>
-            {Icon && <Icon className="h-4 w-4 mb-1 flex-shrink-0" />}
-            <span className="font-semibold truncate">{title}</span>
-        </div>
-    );
+  const { title, icon: Icon, grid, row, color } = event;
+  return (
+    <div 
+      className={`flex flex-col justify-center items-center text-center p-2 rounded-lg border-2 border-gray-600 text-white text-xs font-semibold bg-gray-800 shadow-md ${grid} ${color}`}
+      style={{ gridRowStart: row }}
+    >
+      {Icon && <Icon className="w-4 h-4 mb-1" />}
+      <span className="truncate w-full">{title}</span>
+    </div>
+  );
 };
 
 const EventTimeline = () => {
-    // --- Generate classic time slots for the header ---
-    // Total duration: 8:00 AM to 3:30 PM is 7.5 hours = 15 slots of 30 mins
-    const timeSlots = Array.from({ length: 15 }, (_, i) => {
-        const totalMinutes = 8 * 60 + i * 30;
-        const hour24 = Math.floor(totalMinutes / 60);
-        const minute = totalMinutes % 60;
-        const hour12 = hour24 >= 13 ? hour24 - 12 : (hour24 === 0 ? 12 : hour24);
-        return `${hour12}:${minute === 0 ? '00' : minute}`;
-    });
-
-    return (
-        <section id="timeline" className="w-full mx-auto py-24 px-4">
-            <div className="text-center">
-                <h2 className="font-serif text-5xl mb-4">Event Timeline</h2>
-                <p className="max-w-2xl mx-auto mb-12 text-lg text-copy-light">
-                    A compact overview of the day's proceedings.
-                </p>
-            </div>
-
-            <div className="w-full max-w-7xl mx-auto rounded-xl border border-white/20 bg-black/90 p-4 backdrop-blur-sm">
-                <div className="grid grid-cols-15 grid-rows-7 gap-1">
-
-                    {/* --- Time Slot Headers (Row 1) - Back to the classic style --- */}
-                    {timeSlots.map((time, index) => (
-                        <div key={time} className={`col-start-${index + 1} col-span-1 row-start-1 text-center font-sans text-xs text-gray-400 py-1 border-r border-gray-800`}>
-                            {time}
-                        </div>
-                    ))}
-
-                    {/* Events Rendered from Data */}
-                    {eventsData.map((event) => (
-                        <EventBlock key={event.id} event={event} />
-                    ))}
-
-                    {/* Central "Results" Box */}
-                    <div className="col-start-13 col-span-2 row-start-2 row-span-6 flex flex-col items-center justify-center text-center bg-yellow-400/90 text-black rounded-lg p-4 border-2 border-yellow-300">
-                        <IconAward className="h-10 w-10 mb-2" />
-                        <h3 className="font-serif text-2xl font-bold">Results</h3>
-                        <p className="text-sm font-semibold">2:30 PM</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+  const timeSlots = Array.from({ length: 15 }, (_, i) => {
+    const totalMinutes = 8 * 60 + i * 30;
+    const hour24 = Math.floor(totalMinutes / 60);
+    const minute = totalMinutes % 60;
+    const hour12 = hour24 >= 13 ? hour24 - 12 : (hour24 === 0 ? 12 : hour24);
+    return `${hour12}:${minute === 0 ? '00' : minute}`;
+  });
+  
+  return (
+    <section className="w-full p-16 bg-black border-t border-white">
+      <div className="text-center mb-12">
+        <h2 className="text-5xl font-serif text-white mb-4">Event Timeline</h2>
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto">A compact overview of the day's proceedings.</p>
+      </div>
+      <div className="max-w-7xl mx-auto rounded-2xl border-2 border-gray-600 bg-gradient-to-br from-gray-900 via-gray-800 to-black p-6 shadow-2xl">
+        <div className="grid grid-cols-15 gap-2 p-4 bg-gray-900 rounded-xl border border-gray-700" style={{gridTemplateRows: 'repeat(7, minmax(0, 1fr))'}}>
+          {timeSlots.map((time, i) => (
+            <div key={time} className={`text-center text-xs text-gray-300 p-2 border-r border-gray-600 col-start-${i+1} row-start-1 bg-gray-800 rounded-sm`}>{time}</div>
+          ))}
+          {eventsData.map((event) => <EventBlock key={event.id} event={event} />)}
+          <div className="flex flex-col justify-center items-center text-center p-4 rounded-lg bg-amber-500 text-black border-2 border-amber-400 shadow-lg col-start-13 col-span-2 row-start-2 row-span-6">
+            <Award className="w-10 h-10 mb-2" />
+            <h3 className="text-xl font-serif font-bold">Results</h3>
+            <p className="text-sm font-semibold">2:30 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default EventTimeline;
