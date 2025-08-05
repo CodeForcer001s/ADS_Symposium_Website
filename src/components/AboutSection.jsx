@@ -295,8 +295,8 @@ const AboutSection = () => {
               </div>
 
               <div className="relative overflow-hidden px-4">
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                  Relive the highlights of{" "}
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 font-extrabold max-w-3xl mx-auto leading-relaxed">
+                  REGISTER FOR{" "}
                   <span className="font-bold neon-glow text-blue-400">
                     AI-ZEN 25
                   </span>
@@ -338,7 +338,9 @@ const AboutSection = () => {
                   </div>
 
                   <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                    Our technical symposium will stand as a landmark event that brought together some of the brightest minds to compete in five distinct events spanning
+                    Our technical symposium will stand as a landmark event that
+                    brought together some of the brightest minds to compete in
+                    five distinct events spanning
                     <span className="text-blue-400 font-semibold">
                       {" "}
                       software development
@@ -348,9 +350,13 @@ const AboutSection = () => {
                       {" "}
                       data analytics
                     </span>
-                    , and
-               
-            The participants will have demonstrated exceptional technical prowess and innovation through a series of rigorous challenges. This symposium is set to inspire future collaborations, ignite a culture of creative problem-solving, and push the boundaries of what students and tech enthusiasts can achieve in competitive environments.
+                    , and The participants will have demonstrated exceptional
+                    technical prowess and innovation through a series of
+                    rigorous challenges. This symposium is set to inspire future
+                    collaborations, ignite a culture of creative
+                    problem-solving, and push the boundaries of what students
+                    and tech enthusiasts can achieve in
+                    competitive environments.
                   </p>
 
                   <div className="mt-4 sm:mt-6 flex flex-wrap gap-2 sm:gap-3">

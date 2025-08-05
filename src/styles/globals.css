@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,9 +39,11 @@
     letter-spacing: 0.05em;
       /* or any custom value */
   }
+ 
   body {
     @apply bg-space-black text-stellar-silver;
     font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: "Rubik", sans-serif;
 
   }
 }

@@ -185,7 +185,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative w-full min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black px-4 py-24 overflow-hidden"
+      className="relative w-full min-h-screen bg-black/20 px-4 py-24 overflow-hidden"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0">

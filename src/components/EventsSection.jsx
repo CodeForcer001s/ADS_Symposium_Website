@@ -113,7 +113,7 @@ const EventsSection = () => {
           </div>
 
           {/* Main title */}
-          <h2 className="font-black text-7xl lg:text-8xl mb-8 tracking-tight">
+          <h2 className="font-black text-7xl lg:text-8xl mb-8">
             <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent drop-shadow-2xl">
               Our Events
             </span>
@@ -228,19 +228,23 @@ const EventsSection = () => {
         )}
 
         {/* Call to action */}
-        <div className="text-center mt-20">
-          <div className="inline-flex items-center gap-6 px-12 py-6 rounded-3xl bg-gradient-to-r from-gray-900/90 to-black/90 backdrop-blur-xl border border-gray-700/50 shadow-2xl">
-            <div className="text-left">
-              <div className="text-white font-bold text-2xl mb-1">
+        <div className="text-center mt-20 px-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 px-6 sm:px-12 py-6 rounded-3xl bg-gradient-to-r from-gray-900/90 to-black/90 backdrop-blur-xl border border-gray-700/50 shadow-2xl">
+            {/* Text Section */}
+            <div className="text-center sm:text-left w-full sm:w-auto">
+              <div className="text-white font-bold text-lg sm:text-2xl mb-2 sm:mb-1">
                 Ready to Join?
               </div>
-              <div className="text-gray-400">
+              <div className="text-gray-400 text-sm sm:text-base">
                 Register now and secure your spot at these amazing events.
               </div>
             </div>
+
+            {/* Button */}
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSezC-3X4aeZED34Cn-mUCjc3D8ASbncAVtIHyUbPYO9ILY68g/viewform?usp=header"
-              className="px-8 py-4 rounded-2xl bg-gradient-to-r from-white to-gray-200 text-black font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 rounded-2xl bg-gradient-to-r from-white to-gray-200 text-black font-bold text-base sm:text-lg text-center transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              target="_blank"
             >
               Register Now
             </a>

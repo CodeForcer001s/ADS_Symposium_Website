@@ -237,14 +237,16 @@ const EventIntro = ({
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse" />
-                  <span className="text-green-400 font-bold">
+                  <span className="text-green-400 font-bold max-md:text-sm">
                     HEROES ONLINE
                   </span>
                 </div>
                 <div className="text-red-400">|</div>
-                <div className="text-gray-300">STATUS: ASSEMBLED</div>
+                <div className="text-gray-300 max-md:text-sm">
+                  STATUS: ASSEMBLED
+                </div>
               </div>
-              <div className="text-yellow-400 font-bold animate-pulse">
+              <div className="text-yellow-400 font-bold animate-pulse max-md:text-sm max-md:ml-4">
                 MISSION ACTIVE
               </div>
             </div>
@@ -283,11 +285,11 @@ const EventIntro = ({
                     <div className="w-4 h-4 bg-yellow-400 rounded-full animate-pulse" />
                     <div className="w-4 h-4 bg-blue-500 rounded-full animate-pulse" />
                   </div>
-                  <span className="text-white font-bold text-lg">
+                  <span className="text-white font-bold text-lg max-md:text-sm">
                     MARVEL HERO INTERFACE
                   </span>
                 </div>
-                <div className="text-green-400 font-bold animate-pulse">
+                <div className="text-green-400 font-bold animate-pulse max-md:text-sm max-md:ml-5">
                   POWER LEVEL: MAXIMUM
                 </div>
               </div>
@@ -452,32 +454,33 @@ const EventIntro = ({
                       : "translate-y-10 opacity-0"
                   }`}
                 >
-                  <div className="bg-gray-900/90 border-2 border-red-500/50 rounded-xl p-8 shadow-lg shadow-red-500/20">
-                    <div className="flex items-center justify-between mb-6">
-                      <div className="text-red-400 font-bold text-xl flex items-center gap-2 max-md:text-sm">
+                  <div className="bg-gray-900/90 border-2 border-red-500/50 rounded-xl p-4 sm:p-6 md:p-8 shadow-lg shadow-red-500/20">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 sm:mb-6 gap-2 sm:gap-0">
+                      <div className="text-red-400 font-bold text-sm sm:text-base md:text-xl flex items-center gap-2">
                         🚀 HERO REGISTRATION ACTIVE
                       </div>
-                      <div className="text-yellow-400 font-bold animate-pulse max-md:text-sm">
+                      <div className="text-yellow-400 font-bold animate-pulse text-xs sm:text-sm md:text-base">
                         AWAITING YOUR ARRIVAL...
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-6">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                       <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSezC-3X4aeZED34Cn-mUCjc3D8ASbncAVtIHyUbPYO9ILY68g/viewform?usp=header"
-                        className="flex items-center gap-4 px-10 py-5 font-black text-xl text-white rounded-xl border-2 border-white transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-white/50 group"
+                        className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 sm:px-10 sm:py-5 font-black text-sm sm:text-lg md:text-xl text-white rounded-xl border-2 border-white transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-white/50 group text-center"
                         style={{
                           background:
-                            "linear-gradient(45deg, #ff0000, #ffd700, #0066ff)",
+                            "linear-gradient(45deg, #8e2de2, #4a00e0, #00c9ff)",
                           backgroundSize: "300% 300%",
                           animation: "heroGradient 2s ease infinite",
                         }}
+                        target="_blank"
                       >
                         <span>REGISTER NOW</span>
                         <div className="w-3 h-3 bg-white rounded-full animate-pulse group-hover:animate-ping" />
                       </a>
 
-                      <div className="text-green-400 font-bold text-lg flex items-center gap-2 max-md:hidden">
+                      <div className="text-green-400 font-bold text-xs sm:text-sm md:text-lg flex items-center gap-2 sm:ml-2">
                         ⚡ REGISTRATION: ONLINE
                       </div>
                     </div>

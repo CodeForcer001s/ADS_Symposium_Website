@@ -459,6 +459,7 @@ const FuturisticEventHero = ({ event }) => {
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSezC-3X4aeZED34Cn-mUCjc3D8ASbncAVtIHyUbPYO9ILY68g/viewform?usp=header"
                 className="group px-10 py-4 cyber-button rounded-lg text-white font-bold text-lg transform hover:scale-105 transition-all duration-300 relative z-10"
+                target="_blank"
               >
                 <span className="flex items-center gap-3 relative z-10">
                   <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
