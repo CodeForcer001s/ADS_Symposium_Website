@@ -116,7 +116,8 @@ export const eventsData = [
     venue: "St. Joseph's Institute of Technology",
     registrationLink: "#",
     color: "midnight-black",
-    image: "/images/events/hack-or-haunt-bg.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIBVu4RGdvKdhkDA414MV6hpGQkV6TmD8Vxg&s",
   },
 
   {
@@ -127,7 +128,8 @@ export const eventsData = [
       "A tech-inspired, animation-themed event combining light coding with interactive games. Think fast, think visual, and decode your way to victory!",
     introduction:
       "Decode, describe & dominate your way through Animatech, a tech and animation fusion challenge. Test your knowledge, logic, and teamwork in a series of engaging rounds designed to stimulate both your coding skills and visual thinking.",
-    image: "/images/events/animatech-bg.jpg",
+    image:
+      "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/61ea923bdd0a8_anime_quiz.png",
     rounds: [
       {
         name: "Round 1 – Ani-Quest (System Required)",
@@ -190,7 +192,8 @@ export const eventsData = [
       "A dynamic sci-fi-themed triathlon of words, neural coordination, and visual imagination for teams of two.",
     introduction:
       "Welcome to Prompt-e-Flux, a dynamic sci-fi-themed triathlon for the mind. This is no ordinary event — it’s a fusion of futuristic language, neural coordination, and visual imagination. Each team of two will flow through three electrifying rounds, each charged with the energy of innovation and creativity.",
-    image: "/images/events/prompt-e-flux-bg.jpg",
+    image:
+      "https://zd-brightspot.s3.us-east-1.amazonaws.com/wp-content/uploads/2024/04/19183329/prompt-engineering-in-programming.jpg",
     rounds: [
       {
         name: "Round 1: Word Puzzle",

@@ -212,7 +212,7 @@ const EventIntro = ({
 
       {/* Moving Sparkle Line */}
       <div
-        className="absolute w-full h-1 bg-gradient-to-r from-transparent via-white via-white to-transparent opacity-30 transition-all duration-200"
+        className="absolute w-full h-1 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 transition-all duration-200"
         style={{
           top: `${sparklePosition}%`,
           background:

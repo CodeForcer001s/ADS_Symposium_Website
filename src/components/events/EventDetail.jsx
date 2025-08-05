@@ -10,7 +10,8 @@ import { staggerContainer } from "../../utils/animations";
 import organizersData from "../../data/organizersData";
 
 const EventDetail = ({ event }) => {
-  const eventOrganizers = event.organizers.map((id) => organizersData[id]);
+  const eventOrganizers =
+    event.organizers?.map((id) => organizersData[id]) || [];
 
   // Enhanced cosmic corner elements with more variety
   const cornerElements = [

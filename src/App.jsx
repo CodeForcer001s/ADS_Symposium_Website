@@ -1,7 +1,9 @@
+// App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Events from "./pages/Events";
+import MainLayout from "./pages/MainLayout";
+// Import the correct page components instead of EventDetail
 import DataFlix from "./pages/DataFlix";
 import HackOrHaunt from "./pages/HackOrHaunt";
 import Codesync from "./pages/Codesync";
@@ -17,8 +19,8 @@ function App() {
     <div className="app bg-space-black min-h-screen text-stellar-silver">
       <Router>
         <Routes>
-          <Route path="/" element={<Events />} />
-          <Route path="/events" element={<Events />} />
+          <Route path="/" element={<MainLayout />} />
+          <Route path="/events" element={<MainLayout />} />
           <Route path="/events/dataflix" element={<DataFlix />} />
           <Route path="/events/hack-or-haunt" element={<HackOrHaunt />} />
           <Route path="/events/codesync" element={<Codesync />} />
