@@ -4,6 +4,9 @@ import damuImg from "../assets/damu.jpg";
 import ishaniImg from "../assets/ishani.jpg";
 import karunyaImg from "../assets/karunya.jpg";
 import nithiImg from "../assets/nitheeshwari.jpg"
+import madumithaImg from "../assets/madumitha.jpg"
+import selmaImg from "../assets/selma-yazhini.jpg"
+import snehaImg from "../assets/sneha.jpg"
 export const organizersData = {
   organizer1: {
     name: "Deepan SB",
@@ -65,14 +68,14 @@ export const organizersData = {
     name: "Madhumitha GK",
     role: "Organizer - Draw the Sword",
     department: "AI & Data Science",
-    image: "/images/organizers/madhumitha.jpg",
+    image: madumithaImg,
     contact: "madhumitha.gk@stjosephs.edu.in",
   },
   organizer9: {
     name: "Selma Yazhini",
     role: "Organizer – Draw the Sword",
     department: "AI & Data Science",
-    image: "/images/organizers/selma.jpg",
+    image: selmaImg,
     contact: "selma.yazhini@stjosephs.edu.in",
   },
 
@@ -96,8 +99,8 @@ export const organizersData = {
     name: "Nitheeshwari",
     role: "Organizer – Prompt e Flux",
     department: "AI & Data Science",
-    image: "/images/organizers/nitheeshwari.jpg",
-    contact: nithiImg,
+    image: nithiImg,
+    contact: "nitheeshwari@stjosephs.edu.in",
   },
 
   // ✅ Techverse (Sneha, Sanir, Rohitha)
@@ -105,7 +108,7 @@ export const organizersData = {
     name: "Sneha",
     role: "Organizer – Techverse",
     department: "AI & Data Science",
-    image: "/images/organizers/sneha.jpg",
+    image: snehaImg,
     contact: "sneha@stjosephs.edu.in",
   },
   organizer14: {

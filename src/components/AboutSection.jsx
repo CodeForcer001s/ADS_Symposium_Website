@@ -289,7 +289,7 @@ const AboutSection = () => {
             <div className="text-center mb-12 sm:mb-16 md:mb-20">
               <div className="relative inline-block">
                 <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-4 sm:mb-6 gradient-text leading-tight px-2">
-                  The Event Has Passed!
+                  The Event Has Arrived!
                 </h1>
                 <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-xl rounded-full -z-10" />
               </div>
@@ -298,7 +298,7 @@ const AboutSection = () => {
                 <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
                   Relive the highlights of{" "}
                   <span className="font-bold neon-glow text-blue-400">
-                    Ai-ZEN'25
+                    AI-ZEN 25
                   </span>
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform translate-x-[-100%] animate-[shimmer_2s_infinite]" />
                 </p>

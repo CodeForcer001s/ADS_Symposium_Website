@@ -55,7 +55,7 @@ const eventsData = [
   },
   {
     id: "pef1",
-    title: "Prompt R1",
+    title: "Prompt E Flux R1",
     icon: MessageSquare,
     grid: "col-start-4 col-span-2",
     row: 3,
@@ -63,7 +63,7 @@ const eventsData = [
   },
   {
     id: "cs1",
-    title: "CodeSync R1",
+    title: "Draw the Sword R1",
     icon: Code,
     grid: "col-start-4 col-span-2",
     row: 4,
@@ -71,7 +71,7 @@ const eventsData = [
   },
   {
     id: "hoh1",
-    title: "Hack or Haunt R1",
+    title: "Make A Wish R1",
     icon: Ghost,
     grid: "col-start-4 col-span-2",
     row: 5,
@@ -79,7 +79,7 @@ const eventsData = [
   },
   {
     id: "df1",
-    title: "Data Flix R1",
+    title: "Panel D. Saga R1",
     icon: BarChart3,
     grid: "col-start-4 col-span-2",
     row: 6,

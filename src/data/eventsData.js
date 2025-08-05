@@ -65,7 +65,7 @@ export const eventsData = [
       "🧑‍⚖️ Judges' decisions are final and binding.",
       "🧠 In Round 3, each team may use one lifeline: (1) teammate swap or (2) AI hint.",
     ],
-    organizers: ["organizer4", "organizer5", "organizer6"],
+    organizers: ["organizer1", "organizer2", "organizer3"],
     date: "2025-08-30",
     time: "8:00 AM - 3:00 PM",
     venue: "ADS Lab II",

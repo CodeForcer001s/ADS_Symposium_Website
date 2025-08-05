@@ -49,7 +49,7 @@ const FuturisticEventHero = ({ event }) => {
               <div className="inline-flex items-center gap-2 glass-panel px-6 py-3 rounded-full hover:scale-105 transition-all duration-300">
                 <div className="w-2 h-2 bg-green-400 rounded-full status-dot"></div>
                 <span className="text-green-400 text-sm font-mono tracking-wider uppercase">
-                  {event?.subtitle || "Technical Symposium"}
+                  {event?.subtitle || "National Level Technical Symposium 2025"}
                 </span>
               </div>
             </div>
@@ -58,8 +58,14 @@ const FuturisticEventHero = ({ event }) => {
               className="text-5xl md:text-7xl lg:text-9xl font-bold mb-8 cyber-title leading-tight tracking-tight hover:scale-105 transition-transform duration-500 font-sans"
               style={{ animationDelay: "0.4s" }}
             >
-              {event?.title || "Ai-ZEN'25"}
+           AIZEN'25
             </h1>
+           <h2 class="text-xl md:text-3xl text-white font-semibold text-center 
+           text-transparent bg-clip-text 
+           drop-shadow-[0_0_10px_rgba(255,0,128,0.5)] 
+           mt-6 mb-6">
+  National Level Technical Symposium 2025
+</h2>
 
             <div className="mb-12 animate-fade-in-up [animation-delay:0.6s]">
               <div className="inline-block glass-panel rounded-xl">

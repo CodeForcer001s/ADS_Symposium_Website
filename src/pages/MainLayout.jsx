@@ -14,7 +14,7 @@ import FloatingDock from "../components/FloatingDock";
 const MainLayout = () => {
   const eventDate = "2025-08-30T09:30:00";
   const eventDetails = {
-    title: "Ai-ZEN'25",
+    title: "AIZEN'25",
     subtitle: "Technical Symposium",
   };
 
