@@ -338,8 +338,7 @@ const AboutSection = () => {
                   </div>
 
                   <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                    Our technical symposium brought together bright minds for
-                    five distinct competitive events spanning
+                    Our technical symposium will stand as a landmark event that brought together some of the brightest minds to compete in five distinct events spanning
                     <span className="text-blue-400 font-semibold">
                       {" "}
                       software development
@@ -350,13 +349,8 @@ const AboutSection = () => {
                       data analytics
                     </span>
                     , and
-                    <span className="text-pink-400 font-semibold">
-                      {" "}
-                      cybersecurity
-                    </span>
-                    . Participants showcased their technical prowess in rigorous
-                    challenges, pushing the boundaries of innovation and
-                    creative problem-solving.
+               
+            The participants will have demonstrated exceptional technical prowess and innovation through a series of rigorous challenges. This symposium is set to inspire future collaborations, ignite a culture of creative problem-solving, and push the boundaries of what students and tech enthusiasts can achieve in competitive environments.
                   </p>
 
                   <div className="mt-4 sm:mt-6 flex flex-wrap gap-2 sm:gap-3">
@@ -405,7 +399,7 @@ const AboutSection = () => {
                         color: "from-purple-500 to-pink-500",
                       },
                       {
-                        number: "48",
+                        number: "6-8",
                         label: "Hours",
                         color: "from-green-500 to-emerald-500",
                       },

@@ -22,7 +22,7 @@ export const eventsData = [
         ],
         duration: "45 minutes",
         image:
-          "https://static.vecteezy.com/system/resources/previews/009/307/654/original/ai-generated-cartoon-comic-style-scene-with-abstract-characters-free-photo.jpg",
+          "https://thumbs.dreamstime.com/b/open-comic-book-pages-heroes-close-up-background-marvel-dc-comics-high-quality-photo-188517430.jpg",
       },
       {
         name: "Round 2 – DataVerse Queries",
@@ -54,7 +54,7 @@ export const eventsData = [
         ],
         duration: "45 minutes + additional presentation time if required",
         image:
-          "https://cdna.artstation.com/p/assets/images/images/056/538/162/large/nancy-adams-sci-fi-illustration-cyberpunk-comic-poster-by-nancy-adams.jpg",
+          "https://s7d1.scene7.com/is/image/wbcollab/Decoding_AI?qlt=90&fmt=webp&resMode=sharp2",
       },
     ],
     rules: [
