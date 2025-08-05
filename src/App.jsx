@@ -1,13 +1,31 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import './styles/globals.css';
-import './styles/space-theme.css';
-import './styles/components.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Events from "./pages/Events";
+import DataFlix from "./pages/DataFlix";
+import HackOrHaunt from "./pages/HackOrHaunt";
+import Codesync from "./pages/Codesync";
+import PromptEFlux from "./pages/PromptEFlux";
+import Techverse from "./pages/Techverse";
+
+import "./styles/globals.css";
+import "./styles/space-theme.css";
+import "./styles/components.css";
 
 function App() {
   return (
     <div className="app bg-space-black min-h-screen text-stellar-silver">
-      <Outlet />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Events />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/events/dataflix" element={<DataFlix />} />
+          <Route path="/events/hack-or-haunt" element={<HackOrHaunt />} />
+          <Route path="/events/codesync" element={<Codesync />} />
+          <Route path="/events/prompt-e-flux" element={<PromptEFlux />} />
+          <Route path="/events/techverse" element={<Techverse />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
