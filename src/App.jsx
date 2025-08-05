@@ -1,80 +1,35 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import FloatingDock from './components/FloatingDock';
-import CountdownTimer from './components/CountdownTimer';
-import EventTimeline from './components/EventTimeLine';
-import EventsSection from './components/EventsSection';
-import EventCard3DCall from './components/EventCard3DCall';
-import GuidelinesSection from './components/GuidelinesSection';
-import AboutSection from './components/AboutSection';
-import ContactSection from './components/ContactSection'; 
-import RegistrationSection from './components/RegistrationSection';
-import FuturisticEventHero from './components/FuturisticHero/FuturisticEventHero';
+// App.jsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// The MainLayout component contains our original single-page content
-const MainLayout = () => {
-  const eventDate = "2025-08-30T09:30:00";
-  const eventDetails = {
-    title: "Ai-ZEN'25",
-    subtitle: "Technical Symposium",
-  };
-  return (
-    <>
-      <main>
-        {/* Home Section */}
-        {/* <section id="home" className="flex min-h-screen flex-col items-center justify-center border-b border-white/10 px-4 py-24 bg-[url('herobg.png')]">
-          <div className="w-full max-w-6xl text-center">
-            <h1 className="font-serif text-6xl md:text-8xl font-bold tracking-wider">
-              Ai-ZEN'25 Symposium
-            </h1>
-            <CountdownTimer targetDate={eventDate} />
-          </div>
-        </section> */}
+import MainLayout from "./pages/MainLayout";
+import EventCard3DCall from "./components/EventCard3DCall";
 
-        <section id="home">
-          <FuturisticEventHero event={eventDetails} />
-        </section>
+import "./styles/globals.css";
+import "./styles/space-theme.css";
+import "./styles/components.css";
 
-        {/* --- ABOUT SECTION PLACED HERE --- */}
-        <AboutSection />
+const DataFlix = () => <EventCard3DCall eventId="dataflix" />;
+const HackOrHaunt = () => <EventCard3DCall eventId="hack-or-haunt" />;
+const Codesync = () => <EventCard3DCall eventId="codesync" />;
+const PromptEFlux = () => <EventCard3DCall eventId="prompt-e-flux" />;
+const Techverse = () => <EventCard3DCall eventId="techverse" />;
 
-        {/* Timeline Section */}
-        <EventTimeline />
-
-        {/* Events Section */}
-        <section id="events" className="flex min-h-screen flex-col items-center justify-center border-b border-white/10 px-4 py-24 bg-surface">
-          <EventsSection />
-        </section>
-
-        {/* Registration Section */}
-        <RegistrationSection />
-      </main>
-
-      {/* --- GUIDELINES SECTION PLACED HERE --- */}
-      <GuidelinesSection />
-
-      {/* --- CONTACT SECTION PLACED HERE --- */}
-      <ContactSection />
-
-
-      <FloatingDock />
-    </>
-  );
-};
-
-// The App component now manages the routing logic
 function App() {
   return (
-    <Router>
-      <Routes>
-        {/* Route for the main landing page */}
-        <Route path="/" element={<MainLayout />} />
-
-        {/* Route for the dynamic event detail pages */}
-        {/* The `:eventId` part is a URL parameter */}
-        <Route path="/event/:eventId" element={<EventCard3DCall />} />
-      </Routes>
-    </Router>
+    <div className="app bg-space-black min-h-screen text-stellar-silver">
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainLayout />} />
+          <Route path="/events" element={<MainLayout />} />
+          <Route path="/events/dataflix" element={<DataFlix />} />
+          <Route path="/events/hack-or-haunt" element={<HackOrHaunt />} />
+          <Route path="/events/codesync" element={<Codesync />} />
+          <Route path="/events/prompt-e-flux" element={<PromptEFlux />} />
+          <Route path="/events/techverse" element={<Techverse />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
