@@ -275,19 +275,19 @@ const eventsData = [
     venue: "Main Stage",
     participants: "Finalists",
   },
-  {
-    id: "leave",
-    title: "Leave Campus",
-    subtitle: "Event Conclusion",
-    description: "Official end of the event. Thank you for participating!",
-    icon: LogOut,
-    grid: "col-start-15 col-span-1",
-    row: 2,
-    color: "bg-gray-700",
-    hoverColor: "hover:bg-gray-600",
-    venue: "Main Gate",
-    participants: "All Attendees",
-  },
+  // {
+  //   id: "leave",
+  //   title: "Leave Campus",
+  //   subtitle: "Event Conclusion",
+  //   description: "Official end of the event. Thank you for participating!",
+  //   icon: LogOut,
+  //   grid: "col-start-15 col-span-1",
+  //   row: 2,
+  //   color: "bg-gray-700",
+  //   hoverColor: "hover:bg-gray-600",
+  //   venue: "Main Gate",
+  //   participants: "All Attendees",
+  // },
 ];
 
 const EventBlock = ({ event, onClick }) => {

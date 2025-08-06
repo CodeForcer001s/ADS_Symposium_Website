@@ -53,14 +53,14 @@ const OrganizerCard = ({ organizer, delay = 0 }) => {
             {/* Enhanced contact section */}
             <div className="mt-auto pt-6 border-t-2 border-gradient-to-r from-cosmic-purple/30 via-nebula-cyan/30 to-cosmic-purple/30 w-full relative">
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-0.5 bg-gradient-to-r from-cosmic-purple to-nebula-cyan"></div>
-              <div className="bg-cosmic-purple/10 rounded-lg p-4 border border-cosmic-purple/20">
+              {/* <div className="bg-cosmic-purple/10 rounded-lg p-4 border border-cosmic-purple/20">
                 <p className="text-stellar-silver/90 text-sm font-medium">
                   <span className="text-nebula-cyan/80 block mb-1 text-xs uppercase tracking-widest">
                     Contact
                   </span>
                   <span className="text-white">{organizer.contact}</span>
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </CardContent>
