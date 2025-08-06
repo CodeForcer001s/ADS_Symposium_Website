@@ -3,10 +3,12 @@ import naveenaImg from "../assets/naveena.jpg";
 import damuImg from "../assets/damu.jpg";
 import ishaniImg from "../assets/ishani.jpg";
 import karunyaImg from "../assets/karunya.jpg";
-import nithiImg from "../assets/nitheeshwari.jpg"
-import madumithaImg from "../assets/madumitha.jpg"
-import selmaImg from "../assets/selma-yazhini.jpg"
-import snehaImg from "../assets/sneha.jpg"
+import nithiImg from "../assets/nitheeshwari.jpg";
+import madumithaImg from "../assets/madumitha.jpg";
+import selmaImg from "../assets/selma-yazhini.jpg";
+import snehaImg from "../assets/sneha.jpg";
+import sanirImg from "../assets/sanir.jpg";
+import rohithaImg from "../assets/rohitha.jpg";
 export const organizersData = {
   organizer1: {
     name: "Deepan SB",
@@ -115,14 +117,14 @@ export const organizersData = {
     name: "Sanir",
     role: "Organizer – Techverse",
     department: "AI & Data Science",
-    image: "/images/organizers/sanir.jpg",
+    image: sanirImg,
     contact: "sanir@stjosephs.edu.in",
   },
   organizer15: {
     name: "Rohitha",
     role: "Organizer – Techverse",
     department: "AI & Data Science",
-    image: "/images/organizers/rohitha.jpg",
+    image: rohithaImg,
     contact: "rohitha@stjosephs.edu.in",
   },
 };
