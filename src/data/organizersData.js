@@ -5,7 +5,7 @@ import ishaniImg from "../assets/ishani.jpg";
 import karunyaImg from "../assets/karunya.jpg";
 import nithiImg from "../assets/nitheeshwari.jpg";
 import madumithaImg from "../assets/madumitha.jpg";
-import selmaImg from "../assets/selma-yazhini.jpg";
+import selmaImg from "../assets/selma-yazhini-2.jpg";
 import snehaImg from "../assets/sneha.jpg";
 import sanirImg from "../assets/sanir.jpg";
 import rohithaImg from "../assets/rohitha.jpg";
