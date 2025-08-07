@@ -95,7 +95,7 @@ export const eventsData = [
         ],
         duration: "45 minutes",
         image:
-          "https://b1415357.smushcdn.com/1415357/wp-content/uploads/2023/07/rapid-fire-questions_result.webp?lossy=0&strip=1&webp=1",
+          "https://i.pinimg.com/1200x/50/ba/cd/50bacd5b316a65490b832c9a47281d74.jpg",
       },
       {
         name: "Round 2 – Whisper to the Lamp",
@@ -109,7 +109,7 @@ export const eventsData = [
         ],
         duration: "15 minutes",
         image:
-          "https://imgcdn.stablediffusionweb.com/2024/9/15/2dab98ad-b572-4f34-871a-c19af93b4853.jpg",
+          "https://manybackgrounds.com/images/hd/aladdin-genie-s-home-xi8bp47r5q6y1tyi.jpg",
       },
       {
         name: "Round 3 – Escape the SandScript",
@@ -123,7 +123,7 @@ export const eventsData = [
         ],
         duration: "1 hour",
         image:
-          "https://www.codiga.io/img/posts/how-to-display-code-snippets-in-html/hero.jpg",
+          "https://i.pinimg.com/736x/57/8d/52/578d52c88c09347d7009a8f2d31e4592.jpg",
       },
     ],
     rules: [
@@ -141,7 +141,7 @@ export const eventsData = [
     registrationLink: "#",
     color: "desert-gold",
     image:
-      "https://manybackgrounds.com/images/hd/aladdin-genie-s-home-xi8bp47r5q6y1tyi.jpg",
+      "https://i.pinimg.com/1200x/42/38/28/42382830d4dc02d605fbb02e6f3cfcc9.jpg",
   },
   {
     id: "codesync",
