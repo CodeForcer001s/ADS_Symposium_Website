@@ -263,7 +263,6 @@ export const eventsData = [
     ],
     rules: [
       "Teams of exactly 2 participants.",
-      "Laptop required for the third round.",
       "No use of mobile phones or external help during the event, or disqualification applies.",
     ],
     organizers: ["organizer10", "organizer11", "organizer12"],
