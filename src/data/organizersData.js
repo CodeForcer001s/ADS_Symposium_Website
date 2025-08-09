@@ -9,13 +9,14 @@ import selmaImg from "../assets/selma-yazhini-2.jpg";
 import snehaImg from "../assets/sneha.jpg";
 import sanirImg from "../assets/sanir.jpg";
 import rohithaImg from "../assets/rohitha.jpg";
+import deepanImg from "../assets/deepan-image.png"
 export const organizersData = {
   organizer1: {
     name: "Deepan SB",
     role: "Organizer – Panels D.Saga",
     department: "AI & Data Science",
     image:
-      "https://media.licdn.com/dms/image/v2/D5603AQGLyAiaext8rQ/profile-displayphoto-shrink_400_400/B56Za2AgBLHgAg-/0/1746810308685?e=1756944000&v=beta&t=FpWp-7EqbMb4jNJxw6Bks-fdAGqLk_OaVsMiZ4dWUeg",
+      deepanImg,
     contact: "deepan.sb@stjosephs.edu.in",
   },
   organizer2: {

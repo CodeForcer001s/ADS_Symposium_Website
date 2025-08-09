@@ -227,7 +227,7 @@ const Aizen25Loader = () => {
             }}
             transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
           >
-            <h1 className="text-7xl md:text-9xl font-black tracking-[0.2em] relative">
+            <h1 className="text-7xl md:text-9xl font-black font-extrabold tracking-[0.2em] relative">
               <motion.span
                 className="bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 bg-clip-text text-transparent"
                 animate={{
@@ -245,7 +245,7 @@ const Aizen25Loader = () => {
 
               {/* Glitch overlay effect */}
               <motion.span
-                className="absolute inset-0 bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent opacity-0"
+                className="absolute font-extrabold inset-0 bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent opacity-0"
                 animate={{
                   opacity: [0, 0, 0, 0, 0.8, 0],
                   x: [0, 2, -2, 0],

@@ -144,70 +144,6 @@ export const eventsData = [
       "https://i.pinimg.com/1200x/42/38/28/42382830d4dc02d605fbb02e6f3cfcc9.jpg",
   },
   {
-    id: "codesync",
-    title: "Draw the Sword",
-    subtitle: "A Toonified Tech Adventure",
-    shortDescription:
-      "A tech-inspired, animation-themed event combining light coding with interactive games. Think fast, think visual, and decode your way to victory!",
-    introduction:
-      "Decode, describe & dominate your way through a toonified tech adventure! Animatech is a tech-inspired, animation-themed event designed to combine light coding with interactive games. It challenges teams to think fast, think visual, and decode their way to victory.",
-    image:
-      "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/61ea923bdd0a8_anime_quiz.png",
-    rounds: [
-      {
-        name: "Round 1 – Ani-Quest (System Required)",
-        description:
-          "A fun and fast-paced quiz round featuring tech, animation trivia, and visual questions that test your knowledge and reflexes.",
-        instructions: [
-          "Questions will be displayed in the link given.",
-          "Teams will respond on the link, as directed.",
-          "No hints or multiple attempts are allowed per question.",
-          "Switching tabs or using AI tools will be considered as malpractice and the team will be disqualified.",
-        ],
-        duration: "30 minutes",
-        image:
-          "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/61ea923bdd0a8_anime_quiz.png",
-      },
-      {
-        name: "Round 2 – Script Flip",
-        description:
-          "A logic-based round where teams are given shuffled lines of code. The task is to reorder them into a correct working program.",
-        instructions: [
-          "Rearranged code must produce the correct logic or output.",
-          "Teams must clearly number or rewrite the correct sequence.",
-          "No syntax correction required unless specified.",
-        ],
-        duration: "45 minutes",
-        image:
-          "https://images.squarespace-cdn.com/content/v1/5e168e1e8ef01c6c48ed12f1/1641946080050-7RDF3OOK6I58GBWI3X35/Flip-the-Script.jpg",
-      },
-      {
-        name: "Round 3 – LogicLens",
-        description:
-          "A single picture will contain hidden technical terms that participants must identify using visual clues.",
-        instructions: [
-          "Teams must identify all keywords based on the visual clue.",
-          "Bonus points may be awarded for identifying the overarching connection.",
-          "No external help or collaboration with other teams is allowed.",
-        ],
-        duration: "30 minutes",
-        image:
-          "https://media.licdn.com/dms/image/v2/D5612AQGei8OVGjFcaQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1712145136298?e=2147483647&v=beta&t=mOlLmiB8Orl22jl3IeXvaN7U65-2eBSk985FKq1PbRI",
-      },
-    ],
-    rules: [
-      "Each team must consist of 2-3 participants.",
-      "No use of phones or electronic devices during any round.",
-      "Judges’ decisions are final and binding.",
-    ],
-    organizers: ["organizer7", "organizer8", "organizer9"],
-    date: "2025-08-30",
-    time: "8:00 AM - 3:00 PM",
-    venue: "ADS Lab I",
-    registrationLink: "#",
-    color: "vibrant-cyan",
-  },
-  {
     id: "prompt-e-flux",
     title: "Prompt-e-Flux",
     subtitle: "Where Creativity Charges Through Circuits of the Mind",
@@ -272,6 +208,71 @@ export const eventsData = [
     registrationLink: "#",
     color: "cosmic-orange",
   },
+  {
+    id: "codesync",
+    title: "Draw the Sword",
+    subtitle: "A Toonified Tech Adventure",
+    shortDescription:
+      "A tech-inspired, animation-themed event combining light coding with interactive games. Think fast, think visual, and decode your way to victory!",
+    introduction:
+      "Decode, describe & dominate your way through a toonified tech adventure! Animatech is a tech-inspired, animation-themed event designed to combine light coding with interactive games. It challenges teams to think fast, think visual, and decode their way to victory.",
+    image:
+      "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/61ea923bdd0a8_anime_quiz.png",
+    rounds: [
+      {
+        name: "Round 1 – Ani-Quest (System Required)",
+        description:
+          "A fun and fast-paced quiz round featuring tech, animation trivia, and visual questions that test your knowledge and reflexes.",
+        instructions: [
+          "Questions will be displayed in the link given.",
+          "Teams will respond on the link, as directed.",
+          "No hints or multiple attempts are allowed per question.",
+          "Switching tabs or using AI tools will be considered as malpractice and the team will be disqualified.",
+        ],
+        duration: "30 minutes",
+        image:
+          "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/61ea923bdd0a8_anime_quiz.png",
+      },
+      {
+        name: "Round 2 – Script Flip",
+        description:
+          "A logic-based round where teams are given shuffled lines of code. The task is to reorder them into a correct working program.",
+        instructions: [
+          "Rearranged code must produce the correct logic or output.",
+          "Teams must clearly number or rewrite the correct sequence.",
+          "No syntax correction required unless specified.",
+        ],
+        duration: "45 minutes",
+        image:
+          "https://images.squarespace-cdn.com/content/v1/5e168e1e8ef01c6c48ed12f1/1641946080050-7RDF3OOK6I58GBWI3X35/Flip-the-Script.jpg",
+      },
+      {
+        name: "Round 3 – LogicLens",
+        description:
+          "A single picture will contain hidden technical terms that participants must identify using visual clues.",
+        instructions: [
+          "Teams must identify all keywords based on the visual clue.",
+          "Bonus points may be awarded for identifying the overarching connection.",
+          "No external help or collaboration with other teams is allowed.",
+        ],
+        duration: "30 minutes",
+        image:
+          "https://media.licdn.com/dms/image/v2/D5612AQGei8OVGjFcaQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1712145136298?e=2147483647&v=beta&t=mOlLmiB8Orl22jl3IeXvaN7U65-2eBSk985FKq1PbRI",
+      },
+    ],
+    rules: [
+      "Each team must consist of 2-3 participants.",
+      "No use of phones or electronic devices during any round.",
+      "Judges’ decisions are final and binding.",
+    ],
+    organizers: ["organizer7", "organizer8", "organizer9"],
+    date: "2025-08-30",
+    time: "8:00 AM - 3:00 PM",
+    venue: "ADS Lab I",
+    registrationLink: "#",
+    color: "vibrant-cyan",
+  },
+
   {
     id: "techverse",
     title: "TechVerse",
