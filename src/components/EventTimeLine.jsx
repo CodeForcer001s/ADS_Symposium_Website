@@ -30,7 +30,7 @@ const eventsData = [
     row: 2,
     color: "bg-yellow-800",
     hoverColor: "hover:bg-yellow-700",
-    venue: "Main Auditorium",
+    venue: "AV Hall I",
     participants: "All Attendees",
   },
   {
@@ -44,7 +44,7 @@ const eventsData = [
     row: 2,
     color: "bg-stone-600",
     hoverColor: "hover:bg-stone-500",
-    venue: "Cafeteria",
+    venue: "Various Locations",
     participants: "Open to All",
   },
   {
@@ -85,7 +85,7 @@ const eventsData = [
     row: 3,
     color: "bg-pink-900",
     hoverColor: "hover:bg-pink-800",
-    venue: "Tech Lab A",
+    venue: "ADS Lab II",
     participants: "Registered Teams",
   },
   {
@@ -98,7 +98,7 @@ const eventsData = [
     row: 4,
     color: "bg-blue-900",
     hoverColor: "hover:bg-blue-800",
-    venue: "Computer Lab B",
+    venue: "ADS Lab I",
     participants: "Individual Coders",
   },
   {
@@ -111,7 +111,7 @@ const eventsData = [
     row: 5,
     color: "bg-purple-900",
     hoverColor: "hover:bg-purple-800",
-    venue: "Creative Studio",
+    venue: "Drawing Hall I",
     participants: "Creative Teams",
   },
   {
@@ -125,7 +125,7 @@ const eventsData = [
     row: 6,
     color: "bg-green-900",
     hoverColor: "hover:bg-green-800",
-    venue: "Analytics Center",
+    venue: "ADS Lab II",
     participants: "Data Teams",
   },
   {
@@ -138,7 +138,7 @@ const eventsData = [
     row: 7,
     color: "bg-cyan-900",
     hoverColor: "hover:bg-cyan-800",
-    venue: "Innovation Hub",
+    venue: "AV Hall III",
     participants: "Tech Teams",
   },
   {
@@ -152,7 +152,7 @@ const eventsData = [
     row: 3,
     color: "bg-pink-800",
     hoverColor: "hover:bg-pink-700",
-    venue: "Tech Lab A",
+    venue: "ADS Lab II",
     participants: "Qualified Teams",
   },
   {
@@ -165,7 +165,7 @@ const eventsData = [
     row: 4,
     color: "bg-blue-800",
     hoverColor: "hover:bg-blue-700",
-    venue: "Computer Lab B",
+    venue: "ADS Lab I",
     participants: "Qualified Coders",
   },
   {
@@ -178,7 +178,7 @@ const eventsData = [
     row: 5,
     color: "bg-purple-800",
     hoverColor: "hover:bg-purple-700",
-    venue: "Creative Studio",
+    venue: "Drawing Hall I",
     participants: "Qualified Teams",
   },
   {
@@ -191,7 +191,7 @@ const eventsData = [
     row: 6,
     color: "bg-green-800",
     hoverColor: "hover:bg-green-700",
-    venue: "Analytics Center",
+    venue: "ADS Lab II",
     participants: "Qualified Teams",
   },
   {
@@ -204,7 +204,7 @@ const eventsData = [
     row: 7,
     color: "bg-cyan-800",
     hoverColor: "hover:bg-cyan-700",
-    venue: "Innovation Hub",
+    venue: "AV Hall III",
     participants: "Qualified Teams",
   },
   {
@@ -218,7 +218,7 @@ const eventsData = [
     row: 3,
     color: "bg-pink-700",
     hoverColor: "hover:bg-pink-600",
-    venue: "Main Stage",
+    venue: "ADS Lab II",
     participants: "Finalists",
   },
   {
@@ -231,7 +231,7 @@ const eventsData = [
     row: 4,
     color: "bg-blue-700",
     hoverColor: "hover:bg-blue-600",
-    venue: "Main Stage",
+    venue: "ADS Lab I",
     participants: "Finalists",
   },
   {
@@ -245,7 +245,7 @@ const eventsData = [
     row: 5,
     color: "bg-purple-700",
     hoverColor: "hover:bg-purple-600",
-    venue: "Main Stage",
+    venue: "Drawing Hall I",
     participants: "Finalists",
   },
   {
@@ -258,7 +258,7 @@ const eventsData = [
     row: 6,
     color: "bg-green-700",
     hoverColor: "hover:bg-green-600",
-    venue: "Main Stage",
+    venue: "ADS Lab II",
     participants: "Finalists",
   },
   {
@@ -272,7 +272,7 @@ const eventsData = [
     row: 7,
     color: "bg-cyan-700",
     hoverColor: "hover:bg-cyan-600",
-    venue: "Main Stage",
+    venue: "AV Hall III",
     participants: "Finalists",
   },
   // {
