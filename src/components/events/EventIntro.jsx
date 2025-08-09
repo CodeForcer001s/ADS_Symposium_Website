@@ -466,7 +466,7 @@ const EventIntro = ({
 
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                       <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSezC-3X4aeZED34Cn-mUCjc3D8ASbncAVtIHyUbPYO9ILY68g/viewform?usp=header"
+                        href="https://conoscenza2025.stjosephstechnology.ac.in/registration/"
                         className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 sm:px-10 sm:py-5 font-black text-sm sm:text-lg md:text-xl text-white rounded-xl border-2 border-white transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-white/50 group text-center"
                         style={{
                           background:

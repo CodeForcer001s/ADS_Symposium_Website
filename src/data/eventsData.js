@@ -136,8 +136,8 @@ export const eventsData = [
     ],
     organizers: ["organizer4", "organizer5", "organizer6"],
     date: "2025-08-30",
-    time: "10:00 AM - 4:00 PM",
-    venue: "Drawing Hall",
+    time: "8:00 AM - 3:00 PM",
+    venue: "Drawing Hall I",
     registrationLink: "#",
     color: "desert-gold",
     image:

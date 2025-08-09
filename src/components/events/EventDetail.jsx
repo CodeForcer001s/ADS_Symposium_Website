@@ -568,7 +568,7 @@ const EventDetail = ({ event }) => {
               whileTap={{ scale: 0.95 }}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-cosmic-purple to-nebula-cyan blur-xl opacity-70 rounded-full animate-pulse -z-10"></div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSezC-3X4aeZED34Cn-mUCjc3D8ASbncAVtIHyUbPYO9ILY68g/viewform?usp=header">
+              <a href="https://conoscenza2025.stjosephstechnology.ac.in/registration/">
                 <Button
                   variant="cosmic"
                   size="lg"

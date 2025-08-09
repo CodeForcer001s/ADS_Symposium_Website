@@ -180,7 +180,7 @@ const EventsSection = () => {
 
             {/* Button */}
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSezC-3X4aeZED34Cn-mUCjc3D8ASbncAVtIHyUbPYO9ILY68g/viewform?usp=header"
+              href="https://conoscenza2025.stjosephstechnology.ac.in/registration/"
               className="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 rounded-2xl bg-gradient-to-r from-white to-gray-200 text-black font-bold text-base sm:text-lg text-center transition-all duration-300 hover:scale-105 hover:shadow-xl"
               target="_blank"
             >
