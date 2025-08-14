@@ -9,7 +9,7 @@ import {
   IconUser,
 } from "@tabler/icons-react";
 import balaImg from "../assets/balaji-2.jpg";
-import yuvaImg from "../assets/yuvashree.jpg";
+import yuvaImg from "../assets/yuvashree-2.jpg";
 // Updated data with profile images
 const staffCoordinators = [
   { name: "Mrs J Gold Beulah Patturose", phone: "9788123607" },
